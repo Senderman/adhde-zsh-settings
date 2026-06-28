@@ -66,5 +66,4 @@ compinit
 Inspired by:
 - https://github.com/ohmyzsh/ohmyzsh/blob/master/lib
 - https://thevaluable.dev/zsh-completion-guide-examples
-- https://codeberg.org/dnkl/foot/wiki#user-content-spawning-
-
+- https://codeberg.org/dnkl/foot/wiki#zsh
