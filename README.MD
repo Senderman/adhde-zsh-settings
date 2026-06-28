@@ -5,6 +5,7 @@ Zsh settings for [Attention Deficit Hyperactivity Desktop Environment](https://g
 # Features
 ## Completion
 - Completion menu
+- Native zsh fuzzy search (no fzf) while completion menu is open
 - Autocorrection
 - Show completion sources names from compsys
 - Show processes names on `kill` command completion
