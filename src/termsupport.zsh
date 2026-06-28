@@ -1,5 +1,4 @@
 # Parts of this file is copied from https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/termsupport.zsh
-# Set terminal window and tab/icon title, also current dir via OSC-7 escape sequence
 
 # Prevent any code from actually running after pasting (do not execute on newline)
 set zle_bracketed_paste
@@ -154,4 +153,27 @@ function _chpwd-osc7-pwd() {
     (( ZSH_SUBSHELL )) || _osc7-pwd
 }
 add-zsh-hook -Uz chpwd _chpwd-osc7-pwd
+
+# OSC-133 sequences
+# Allow the terminal to distinguish between prompts
+# Emit an OSC-133;A sequence before each prompt.
+function _precmd-osc133a() {
+    print -Pn "\e]133;A\e\\"
+}
+
+# Mark the start of the command output with OSC-133;C sequence
+function _preexec-osc133c() {
+    print -n "\e]133;C\e\\"
+}
+
+# Mark the end of the command output with OSC-133;C sequence
+function _precmd-osc133d() {
+    if ! builtin zle; then
+        print -n "\e]133;D\e\\"
+    fi
+}
+
+add-zsh-hook -Uz precmd _precmd-osc133a
+add-zsh-hook -Uz preexec _preexec-osc133c
+add-zsh-hook -Uz precmd _precmd-osc133d
 

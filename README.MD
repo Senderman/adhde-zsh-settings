@@ -32,6 +32,7 @@ Zsh settings for [Attention Deficit Hyperactivity Desktop Environment](https://g
 ## Terminal emulator support
 - Set emulator's tab and title name to the name of CWD or the running process
 - Send CWD to emulator via OSC-7
+- Support for OSC-133;A, OSC-133;C, OSC-133;D (mark prompts and command outputs)
 
 # Installation
 
@@ -66,4 +67,5 @@ compinit
 Inspired by:
 - https://github.com/ohmyzsh/ohmyzsh/blob/master/lib
 - https://thevaluable.dev/zsh-completion-guide-examples
-- https://codeberg.org/dnkl/foot/wiki#zsh
+- https://codeberg.org/dnkl/foot/wiki
+
