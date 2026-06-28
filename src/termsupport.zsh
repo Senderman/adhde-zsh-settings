@@ -166,7 +166,7 @@ function _preexec-osc133c() {
     print -n "\e]133;C\e\\"
 }
 
-# Mark the end of the command output with OSC-133;C sequence
+# Mark the end of the command output with OSC-133;D sequence
 function _precmd-osc133d() {
     if ! builtin zle; then
         print -n "\e]133;D\e\\"
