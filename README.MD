@@ -4,25 +4,25 @@ Zsh settings for [Attention Deficit Hyperactivity Desktop Environment](https://g
 
 # Features
 ## Completion
-- completion menu
-- autocorrection
-- show completion sources names from compsys
-- show processes names on `kill`` command completion
-- colorful file completion
-- pushd directory stack as cd options (cd -1, cd -2) completion
-- ignore case, hyphens and underscores during completion
+- Completion menu
+- Autocorrection
+- Show completion sources names from compsys
+- Show processes names on `kill` command completion
+- Colorful file completion
+- Pushd directory stack as cd options (`cd -1`, `cd -2`) completion
+- Ignore case, hyphens and underscores during completion
 
 ## History
-- no duplicates in history
-- show command with history expansion  before running it
+- No duplicates in history
+- Show command with history expansion  before running it
 - HISTSIZE=50000, SAVEHIST=10000 (to override this, specify your values after sourcing this plugin in .zshrc)
-- never execute command after pasting it into terminal if it contains \n (safe pasting)
+- Never execute command after pasting it into terminal if it contains \n (safe pasting)
 
 ## ZSH options
-- enable pushd directory stack
-- type directory name to change dir without cd
-- treat `#` as start of the comment if not escaped
-- colored man pages
+- Enable pushd directory stack
+- Type directory name to change dir without cd
+- Treat `#` as start of the comment if not escaped
+- Colored man pages
 - `^X^E` to edit the current command line in your `$EDITOR` 
 - `Ctrl+Left/Right` to move to the prev/next word
 
