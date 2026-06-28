@@ -2,6 +2,8 @@
 
 Zsh settings for [Attention Deficit Hyperactivity Desktop Environment](https://github.com/Senderman/adhde)
 
+[![asciicast](https://asciinema.org/a/eht8F94eGCllqJVG.svg)](https://asciinema.org/a/eht8F94eGCllqJVG)
+
 # Features
 ## Completion
 - Completion menu
